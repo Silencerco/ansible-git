@@ -1,14 +1,14 @@
 # git
 
-[![License](https://img.shields.io/badge/license-New%20BSD-blue.svg?style=flat)](https://raw.githubusercontent.com/ansiblebit/git/master/LICENSE)
-[![Build Status](https://travis-ci.org/ansiblebit/git.svg?branch=master)](https://travis-ci.org/ansiblebit/git)
+[![License](https://img.shields.io/badge/license-New%20BSD-blue.svg?style=flat)](https://raw.githubusercontent.com/Silencerco/ansible-git/master/LICENSE)
+[![Build Status](https://travis-ci.org/Silencerco/ansible-git.svg?branch=master)](https://travis-ci.org/Silencerco/ansible-git)
 
 [![Platform](http://img.shields.io/badge/platform-centos-932279.svg?style=flat)](#)
 [![Platform](http://img.shields.io/badge/platform-debian-a80030.svg?style=flat)](#)
 [![Platform](http://img.shields.io/badge/platform-redhat-cc0000.svg?style=flat)](#)
 [![Platform](http://img.shields.io/badge/platform-ubuntu-dd4814.svg?style=flat)](#)
 
-[![Project Stats](https://www.openhub.net/p/ansiblebit-git/widgets/project_thin_badge.gif)](https://www.openhub.net/p/ansiblebit-git/)
+[![Project Stats](https://www.openhub.net/p/Silencerco-ansible-git/widgets/project_thin_badge.gif)](https://www.openhub.net/p/Silencerco-ansible-git/)
 
 [Ansible][ansible] role to install [git][git].
 
@@ -32,7 +32,7 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 For instance, if the role uses the EC2 module,
 it may be a good idea to mention in this section that the boto package is required.
 
-- ansible >= 2.0
+- [ansible][ansible] >= 2.0
 
 
 ## Role Variables
@@ -61,7 +61,7 @@ None.
         git_version: 1.9.1
 
       roles:
-         - role: ansiblebit.git
+         - role: Silencerco.git
 
 
 ## Tags
@@ -90,7 +90,7 @@ To run tests for `trusty64`:
 ```
 $ cd tests
 $ bash test_idempotence.sh --box trusty64.vagrant.dev
-# log file will be stores under tests/log
+# log file will be stored under tests/log
 ```
 
 To perform debugging on a specific environment:
