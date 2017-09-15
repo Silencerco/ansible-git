@@ -13,6 +13,7 @@ matrix:
       env: TOXENV=py27-ansible20
 
 install:
+  - bash -c "cd .. && mv ansible-git git && ln -s git ansible-git"
   - pip install tox
 
 script:
@@ -27,8 +28,6 @@ notifications:
       - "'%{commit_subject}' by %{author}"
       - "%{elapsed_time} : %{duration}"
       - "%{message}"
-    rooms:
-      secure: NnbcOuvDwjTK1orHxC/LyRhuRZghPt8kliCGBpvBh4exKrr8XjFMoStAOKwu/9KzKDeKzufDTVP4QGNYVp7aQZnTQwJapNTShA47ffAKVAyw9qjGzmOofp3yCo7G9qvAzfeL+E7+4ssnH6Kp1wq1GT79deevl15IjAkzYiRTlUk=
     on_success: always
     on_failure: always
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
